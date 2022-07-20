@@ -14,31 +14,31 @@ export default function TabelaPrincipal(){
         </thead>
         <tbody>
         <tr>
-            <th>Biblioteca Digital de TCCs Aprovados - IFMS</th>
-            <th>Luiz Paulo Rodrigues da Silva Santos e Gabriel Alves dos Santos</th>
-            <th>Profº Drº Rodrigo Silva Duran</th>
-            <th>Nova Andradina</th>
-            <th>Técnico em Informática</th>
-            <th>23/11/2022</th>
+            <td>Biblioteca Digital de TCCs Aprovados - IFMS</td>
+            <td>Luiz Paulo Rodrigues da Silva Santos e Gabriel Alves dos Santos</td>
+            <td>Profº Drº Rodrigo Silva Duran</td>
+            <td>Nova Andradina</td>
+            <td>Técnico em Informática</td>
+            <td>23/11/2022</td>
+        </tr>
+
+        <tr>
+            <td>Biblioteca Digital de TCCs Aprovados - IFMS</td>
+            <td>Luiz Paulo Rodrigues da Silva Santos e Gabriel Alves dos Santos</td>
+            <td>Profº Drº Rodrigo Silva Duran</td>
+            <td>Nova Andradina</td>
+            <td>Técnico em Informática</td>
+            <td>23/11/2022</td>
+        </tr>
+
+        <tr>
+            <td>Biblioteca Digital de TCCs Aprovados - IFMS</td>
+            <td>Luiz Paulo Rodrigues da Silva Santos e Gabriel Alves dos Santos</td>
+            <td>Profº Drº Rodrigo Silva Duran</td>
+            <td>Nova Andradina</td>
+            <td>Técnico em Informática</td>
+            <td>23/11/2022</td>
         </tr>    
-        
-        <tr>
-            <th>Biblioteca Digital de TCCs Aprovados - IFMS</th>
-            <th>Luiz Paulo Rodrigues da Silva Santos e Gabriel Alves dos Santos</th>
-            <th>Profº Drº Rodrigo Silva Duran</th>
-            <th>Nova Andradina</th>
-            <th>Técnico em Informática</th>
-            <th>23/11/2022</th>
-        </tr>  
-        
-        <tr>
-            <th>Biblioteca Digital de TCCs Aprovados - IFMS</th>
-            <th>Luiz Paulo Rodrigues da Silva Santos e Gabriel Alves dos Santos</th>
-            <th>Profº Drº Rodrigo Silva Duran</th>
-            <th>Nova Andradina</th>
-            <th>Técnico em Informática</th>
-            <th>23/11/2022</th>
-        </tr>  
         </tbody>   
         </table>
     )
