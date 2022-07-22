@@ -2,7 +2,7 @@ import axios from "axios";
 import Header from "../components/header";
 
 export const getStaticProps = async () => {
-    const response = await axios.get('http://localhost:4000/tcc')
+    const response = await axios.get('https://BackEnd-ORM-TCC.undertak3r.repl.co/tcc')
     const pesquisas = await response.data
     return {
       props: {
