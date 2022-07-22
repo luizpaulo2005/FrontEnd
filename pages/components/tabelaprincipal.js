@@ -1,4 +1,17 @@
-export default function TabelaPrincipal(){
+import React from 'react'
+import axios from 'axios'
+
+export const getServerSideProps = async () => {
+    const response = await axios.get('https://BackEnd-ORM-TCC.undertak3r.repl.co/tcc')
+    const pesquisas = await response.data
+    return {
+      props: {
+        pesquisas
+      }
+    }
+  }
+
+export default function TabelaPrincipal( { pesquisas } ){
     return(
         <table class="table table-striped">
         <thead>
@@ -13,32 +26,19 @@ export default function TabelaPrincipal(){
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>Biblioteca Digital de TCCs Aprovados - IFMS</td>
-            <td>Luiz Paulo Rodrigues da Silva Santos e Gabriel Alves dos Santos</td>
-            <td>Profº Drº Rodrigo Silva Duran</td>
-            <td>Nova Andradina</td>
-            <td>Técnico em Informática</td>
-            <td>23/11/2022</td>
-        </tr>
+        {pesquisas.map(({id, titulo, discenteId, docenteId, cursoId, data_apresentacao})=> (
+          <tr key={id}>
+          <td>{titulo}</td>
+          <td>{discenteId}</td>
+          <td>{docenteId}</td>
+          <td>Nova Andradina</td>
+          <td>{cursoId}</td>
+          <td>{data_apresentacao}</td>
+      </tr>
+        )
+)}
+       
 
-        <tr>
-            <td>Biblioteca Digital de TCCs Aprovados - IFMS</td>
-            <td>Luiz Paulo Rodrigues da Silva Santos e Gabriel Alves dos Santos</td>
-            <td>Profº Drº Rodrigo Silva Duran</td>
-            <td>Nova Andradina</td>
-            <td>Técnico em Informática</td>
-            <td>23/11/2022</td>
-        </tr>
-
-        <tr>
-            <td>Biblioteca Digital de TCCs Aprovados - IFMS</td>
-            <td>Luiz Paulo Rodrigues da Silva Santos e Gabriel Alves dos Santos</td>
-            <td>Profº Drº Rodrigo Silva Duran</td>
-            <td>Nova Andradina</td>
-            <td>Técnico em Informática</td>
-            <td>23/11/2022</td>
-        </tr>    
         </tbody>   
         </table>
     )
